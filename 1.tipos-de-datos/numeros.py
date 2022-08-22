@@ -163,3 +163,49 @@ lista_b.reverse()
 print(lista_b)
 
 # Diccionarios
+
+mi_diccionario = {'llave1':'valor1', 'llave2':'valor2' }
+
+print(mi_diccionario)
+
+# Ahora si llamamos una llave nos va a dar el valor que correspondiente
+
+print(mi_diccionario['llave1'])
+
+# ejemplo mas logico
+
+precios_ropa = {'campera': 4000 , 'remera' : 1500 , 'zapatillas' : 8000}
+
+print(precios_ropa['zapatillas'])
+
+# Se pueden incluir listas en los diccionarios 
+
+precios_ropa = {'campera': ['azul', 'negra'] , 'remera' : ['amarillas', 'blancas', 'negras'] , 'zapatillas' : ['negras', 'blancas']}
+
+print(precios_ropa)
+
+print(precios_ropa['campera'][1])
+
+# La propiedad upper cambia a mayúsculas 
+
+print(precios_ropa['campera'][1].upper())
+
+# asi sobrescribimos un diccionario
+
+precios_ropa['jeans'] = 1500
+
+print(precios_ropa)
+
+print(precios_ropa['jeans'])
+
+# La función keys sirve para ver las llaves que tenemos en el diccionario
+
+print(precios_ropa.keys())
+
+# y values para los valores 
+
+print(precios_ropa.values())
+
+# funcion items para ver los pares
+
+print(precios_ropa.items())
