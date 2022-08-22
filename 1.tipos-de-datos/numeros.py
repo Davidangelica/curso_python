@@ -1,5 +1,6 @@
 
-from operator import le
+
+
 from traceback import print_tb
 
 
@@ -93,3 +94,72 @@ edad = 22
 print(f"hola me llamo {nombre} y tengo {edad}")
 
 
+# listas propiedades
+
+mi_lista = [1,2,3]
+
+print (mi_lista)
+
+# Podemos poner cualquier tipo de objeto
+#los indices arrancan de 0
+# Las listas son mutables
+
+mi_lista = ['cadena',2,3]
+
+print(len(mi_lista))     # el len sirve parar saber cuantos objetos hay, en este caso 3
+
+
+print (mi_lista[1:])    # el resultado seria 2, 3
+
+# las listas se pueden sumar 
+
+lista_1 = ['uno', 'dos', 'tres']
+lista_2 = ['cuatro', 'cinco']
+
+nueva_lista = lista_1 + lista_2
+
+print(nueva_lista)
+
+# Modificamos el indice 0
+
+nueva_lista[0] = 'david'
+
+print(nueva_lista)
+
+# la función append nos permite concatenar 
+
+nueva_lista.append('jose')
+print(nueva_lista)
+
+# La función pop nos permite remover un elemnto de la lista 
+
+nueva_lista.pop(5)
+print(nueva_lista)
+
+item_popeado = nueva_lista.pop(4)
+print(item_popeado)               # Mostramos solo el item popeado
+
+
+# tambien podemos usar indices negativos
+
+item_popeado2 = nueva_lista.pop(-2)
+print(item_popeado2)
+
+# ordenar listas 
+# La función sort nos permite ordenar listas 
+
+lista_a = ['e', 'f', 'j', 'k','l']
+lista_b = [2,1,7,6]
+
+lista_a.sort()
+print(lista_a)
+
+lista_b.sort()
+print(lista_b)
+
+# con la función reverse ordena al reves
+
+lista_b.reverse()
+print(lista_b)
+
+# Diccionarios
