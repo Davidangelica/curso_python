@@ -209,3 +209,94 @@ print(precios_ropa.values())
 # funcion items para ver los pares
 
 print(precios_ropa.items())
+
+# tuplas
+# son parecidas a las listas con la diferencia de que son inmutables
+# se utiliza en el caso de que no queramos modificar los elementos que contenga
+
+t = (1, 2, 3)
+
+l = [1, 2, 3]
+
+print(type(t))  # la funcion type nos indica que tipo de clase es
+
+# podemos aplicar indices
+
+print(t[0:2])
+
+# Contador
+
+remeras = ('negra', 'negra', 'roja')
+
+print(remeras.count('negra'))  # la funcion count cuenta cuantos objetos iguales hay 
+
+# funcion index, nos dice en que indice se encuntra el objeto dicho
+
+print(remeras.index('roja'))
+
+
+# sets
+# un set tiene valores unicos 
+# no tiene orden
+
+mi_set = set() 
+
+# para añadir elemontos a un set se utiliza la funcion .add
+
+mi_set.add(1)
+
+print(mi_set)
+
+# el set utiliza cuando pj tenemos muchos elementos repetidos en una lista
+
+num = [1,1,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,3]
+
+print(set(num)) #como el set agarra un unico elemento nos mostraria 1, 2, 3
+
+# valores boleanos 
+# nos permiten declarar verdadero o falso
+
+print (4<5) #true
+print (5<4) #false
+
+#comparadores 
+
+# igual se escribre ==
+
+2 == 2   #true
+2 == 3   #false 
+print('carlos' == 'pepe') #false
+print(2 == '2')  #false 
+
+
+# desigual 
+
+print(2 != 2)  #false 
+
+# mayor 
+
+print(5 > 4)
+
+# menor 
+
+print(4 < 5)
+
+# mayor o igual, menor o igual
+
+print (5 >= 5)
+print (4 <= 5)
+
+
+# Encadenado de comparadores 
+# #se utilizan operadores logicos para combinar comparaciones
+# operadores logicos: and, or , not 
+
+print(4 < 5 and 5 >= 5) # si 4 es menor que 5 Y 5 mayor o igual que 5, true  {true and true : true} {true and false : false} {false and false : false}
+
+print(4 < 5 or 5 >= 5) # si 4 es menor que 5 O 5 mayor o igual que 5, true, con que una de la condicion se cumpla da true
+
+print(not 2 == 2) # el not devulve el resultado iverso en este caso false
+
+print (not 2 == 3) # en este caso true 
+
+# declaraciones if y elif 
