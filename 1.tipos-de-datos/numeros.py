@@ -1,6 +1,8 @@
 
 
 
+from operator import truediv
+from random import seed
 from traceback import print_tb
 
 
@@ -300,3 +302,129 @@ print(not 2 == 2) # el not devulve el resultado iverso en este caso false
 print (not 2 == 3) # en este caso true 
 
 # declaraciones if y elif 
+
+hambre = True 
+
+if hambre :
+    print ('tengo hambre')
+
+manzana = False 
+
+if manzana : 
+    print ('hay manzana')
+    
+else:
+     print ('no hay manzana') 
+
+ 
+
+sed = True 
+calor = True
+
+# calor
+if calor:
+    print('hace calor')
+
+elif sed and calor:
+    print('tengo sed y calor')
+
+else:
+    ('estoy bien')
+
+# sed y calor
+
+if calor and not sed:
+    print('hace calor')
+
+elif sed and calor:
+    print('tengo sed y calor')
+
+else:
+    ('estoy bien')
+
+
+# ciclos for 
+
+# hacemos un iteado de la lista
+listafor = [1,2,3,4,5,6,7,8,9,10]
+
+for num in listafor:   # num representa a cada item que se encuntra dentro de la listo (puede ser cualquier nombre)
+    print (num)
+
+for num in listafor:
+    print('hola')      # se van a imprimir 10 holas seguidos porqwue hay 10 items 
+
+
+# buscar numeros impares y pares 
+
+for num in listafor:
+    if num % 2 == 0:
+        print(f'el numero: {num} es par' )
+    else : 
+        print (f'el numero: {num} es impar')
+
+
+# suma con ciclos for 
+# se van a ir sumando los item de la listafor
+
+sumalista = 0
+
+for num in listafor:
+    sumalista = sumalista + num
+    print(sumalista)
+
+
+# ciclos for con cadenas de texto 
+
+# iteado 
+
+listafor = 'hola mundo'
+
+for letter in listafor :
+    print(letter)
+
+
+# desenpaquetar pares 
+
+tuplafor = [(1,2), (3,4), (5,6)]
+
+print(len(tuplafor)) # nos dice cuantos elementos hay 
+
+for item in tuplafor:
+    print(item)
+
+# desempaquetado de una tupla 
+# en este caso a,b por son items con pares 
+
+for (a,b) in tuplafor:
+    print(a)
+    print(b)
+
+
+# cilos for con diccionarios 
+# imprimimos solo las llaves
+d = {'A':1, 'B':2, 'C':3 }
+
+for item in d:
+    print(item)
+
+# imprimimos los items con la funcion .items()
+
+for item in d.items():
+    print(item)
+
+# para imprimir las llaves y el  valor
+# hacemos un desempaquetado en cual a = llave y b = valor
+for llave, valor in d.items():
+    print (f'la llave {llave}')
+    print (f'tiene de valor  {valor}')
+
+
+# imprimir solo el valor con la funcion .values()
+
+for value in d.values():
+    print(value)
+
+
+
+# ciclos while 
