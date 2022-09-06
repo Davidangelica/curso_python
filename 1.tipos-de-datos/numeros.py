@@ -1,11 +1,3 @@
-
-
-
-from operator import truediv
-from random import seed
-from traceback import print_tb
-
-
 micadena = "hello word"
 
 # INDEXADO
@@ -426,5 +418,51 @@ for value in d.values():
     print(value)
 
 
+# ciclos while
+# los bloques while se van a seguir ejecutando una linea de codigo hasta que el bloque sea true 
 
-# ciclos while 
+""""
+x = 0             # este ciclo while es infinito 
+
+while x < 5 :
+
+ print (f"el valor actual de {x} es : ")
+"""
+
+x = 0            
+
+while x < 5 :
+
+ print (f"el valor actual de x es : {x}")
+
+ x += 1      #ahora tenemos una condicion, cada vez que se repita el ciclo se ve a sumar uno a la x por ende va a parar  cuando llegue a 4
+else:
+    print('x no es mayor que 5') # el else se ejecuta al finalizar el ciclo 
+
+
+# palabras claves utiles 
+# break
+# pass
+# continue
+
+x = [1,2,3]
+# el pass sirve para pasar el error 
+for item in x:
+    #comentario  
+    pass
+print('fin')
+
+x = 'david'
+
+# el continue sirve para saltearse un item, en este caso la i
+for letter in x:
+    if letter == 'i':
+     continue
+    print(letter)
+
+# el break corta la cadena, en este caso cuando llega al ad se corta 
+
+for letter in x:
+    if letter == 'v':
+        break 
+    print(letter)
