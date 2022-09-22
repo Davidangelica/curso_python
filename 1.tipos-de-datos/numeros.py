@@ -1,3 +1,6 @@
+from math import fabs
+
+
 micadena = "hello word"
 
 # INDEXADO
@@ -466,3 +469,88 @@ for letter in x:
     if letter == 'v':
         break 
     print(letter)
+
+# operadores utilies 
+
+#range 
+# con esta funcion podemos crear numeros con la cantidad de indices que pongamos
+
+milista=[1,2,3]
+
+for num in range(10):
+    print(num)
+
+# tambien podemos hacerlo con paso 
+for num in range(0,11,2):
+    print(num)
+
+
+#creamos una lista con la funcion range
+
+print(list(range(5)))
+
+#contador de indeces 
+contador_de_indices = 0
+
+palabra = 'hola'
+
+for letter in palabra:
+    print(palabra[contador_de_indices])
+    contador_de_indices += 1 
+
+#la funcion enumerate nos marca los indeces de cada item
+
+for item in enumerate(palabra):
+    print(item)
+
+#separar por pares
+
+for index, letter in enumerate(palabra):
+    print(index)
+    print(letter)
+    print('\n')
+
+#emparejar dos listas 
+# la funcion zip toma el menor indice posible, si tuviera una lista mas con 5 items pj, solo va a tomar los 3 primeros 
+
+milista1 = [1,2,3]
+milista2 = ['a','b','c']
+
+for item in zip(milista1, milista2):
+    print(item)
+
+#cambiar el tipo de variable ingresada mediante un input
+"""""
+resultado = input('ingrese un numero:  ')
+
+print(type(int(resultado)))
+"""""
+#comprension de listas 
+#transformamos una cadena en una lista
+
+mi_cadena = 'pepe'
+mi_lista  = []
+
+for letter in mi_cadena:
+    mi_lista.append(letter)
+print(mi_lista) 
+
+#crear listas utilizando ciclos for 
+
+mi_lista = [x for x in range(0,11)]
+print(mi_lista)
+
+#pequeño algortimo de conversion de forma optimizada 
+
+celsius = [0, 10, 20, 34.4]
+
+fahrenheit = [((9/5) * temp + 32) for temp in celsius]
+print(fahrenheit)
+
+#algoritmo de conversion de forma clasica 
+
+fahrenheit = []
+
+for temp in celsius:
+    fahrenheit.append(((9/5) * temp + 32))
+print(fahrenheit)
