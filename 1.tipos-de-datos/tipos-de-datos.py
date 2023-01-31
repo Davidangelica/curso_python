@@ -42,6 +42,10 @@ letra = letra * 10
 
 print(letra)
 
+#dir
+#la funcion dir sireve para ver que metodos podes utilizar para cada tipo de dato
+print(dir(4))
+
 # Seperar palabras 
 
 x = 'hola mundo'
@@ -232,9 +236,10 @@ print(remeras.count('negra'))  # la funcion count cuenta cuantos objetos iguales
 print(remeras.index('roja'))
 
 
-# sets
+# sets o conjuntos 
 # un set tiene valores unicos 
 # no tiene orden
+# no se pueden modificar los elementos
 
 mi_set = set() 
 
