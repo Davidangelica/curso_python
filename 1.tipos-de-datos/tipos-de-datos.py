@@ -54,6 +54,7 @@ x = x.split()
 print(x)
 
 # Separar por letra 
+#devuelve una lista 
 
 x = 'hola mundo'
 x = x.split('o')
@@ -132,6 +133,16 @@ print(nueva_lista)
 nueva_lista.append('jose')
 print(nueva_lista)
 
+#la funcion insert nos perimite añadir un elemento a lista en el indice que deseamos 
+#no lo remplaza solo lo añade, si habia un elemento en ese indice pasa a moverse de lugar
+
+nueva_lista.insert(2,'treinta')
+
+#la funcion extend nos permite agragar varios elementos a una lista
+#se lo tenemos que pasar en formato lista, no quiere decir que vayan a quedar dos listas, se concatenan 
+
+nueva_lista.extend([5,6]) 
+
 # La función pop nos permite remover un elemnto de la lista 
 
 nueva_lista.pop(5)
@@ -140,11 +151,14 @@ print(nueva_lista)
 item_popeado = nueva_lista.pop(4)
 print(item_popeado)               # Mostramos solo el item popeado
 
-
 # tambien podemos usar indices negativos
 
 item_popeado2 = nueva_lista.pop(-2)
 print(item_popeado2)
+
+#la funcion remove sireve para remover un valor en especifico 
+#si no encuntra el elemento tira un error 
+nueva_lista.remove('treinta')
 
 # ordenar listas 
 # La función sort nos permite ordenar listas 
@@ -300,3 +314,10 @@ print(4 < 5 or 5 >= 5) # si 4 es menor que 5 O 5 mayor o igual que 5, true, con 
 print(not 2 == 2) # el not devulve el resultado iverso en este caso false
 
 print (not 2 == 3) # en este caso true 
+
+#metodo para remplazar cadenas
+#no modifica la ya existente solo podesmos crear una nueva modificando la anterior 
+
+cadena = 'hola soy juan'
+
+cadena_nueva = cadena.replace('juan','david')
