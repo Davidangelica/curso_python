@@ -1,4 +1,4 @@
-#creando un set con la funcion sets
+#creando un set con la funcion set
 conjunto = set(['auto', 'motor','chasis'])
 print(type(conjunto))
 
