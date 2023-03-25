@@ -75,3 +75,63 @@ def suma1(ID,numeros):
 ID,resultado1 = suma1(1,[1,2,3,5,8,4,8,6,8]) # los numeros hay que ponerlos en una lista para que se utilize el parametro
 print(f'suma numero {ID}\nel resultado de  la suma = {resultado1}')
     
+
+#forzar argumentos
+# esto sirve para cambiar el orden de los parametros, si forzamos uno tenemos que forzar todos
+
+def frase(nombre, apellido, edad):
+    return f'hola {nombre} {apellido} tu edad es de {edad} años'
+
+frase_retornada = frase(apellido= 'perez', nombre= 'juan', edad= 20)
+print(frase_retornada)
+
+#keywords arguments
+# de esta forma por defecto la edad es 20
+
+def frase(nombre, apellido, edad = 20):
+    return f'hola {nombre} {apellido} tu edad es de {edad} años'
+
+frase_retornada = frase('juan','perez')
+print(frase_retornada)
+
+# aunque nos permite modificarla luego 
+frase_retornada = frase('juan','perez', 24)
+print(frase_retornada)
+
+# funciones lamba 
+# Las funciones lamba son anonimas, osea que no tiene nombre 
+# estas funciones la podemos almacenar en variables
+# retornan valores automaticamente y ahorran codigo, su utilizan para funciones sencillas
+
+# funcion lamba que multiplica por dos y suma 50
+
+cuenta = lambda x: x * 2 + 50
+
+print(cuenta(5)) 
+
+# utlizando filter
+
+# funcion basica que retorna numeros pares 
+
+def num_par(num):
+    if num%2 == 0:
+        return True
+
+lista = [22 ,2343 ,456 ,6, 31, 32]
+
+# el filter sirve para pasarle varios elementos a una funcion, hace como un bucle porque va recorriendo un arreglo 
+
+numeros_pares = filter(num_par, lista)
+
+# si solo imprimimos nos devulve un objeto filtrado, en este caso (<filter object at 0x000001B73A67F2B0>)
+print(numeros_pares)
+
+# hay que meterlo en una lista
+print(list(numeros_pares))
+
+# hacindo lo mismo pero con lamba
+
+lista = [1,22,4,8,66,51]
+
+numeros_pares = filter(lambda num: num%2 == 0,lista)
+print(list(numeros_pares))

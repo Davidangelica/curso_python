@@ -17,7 +17,7 @@ numero = 12.34854894654
 numero_redondeado = round(numero,2) # el segundo parametro es para indicarle la cantidad de decimales que queremos
 print(numero_redondeado)
 
-# la funcion booleana nos devuelve false si le pasamos 0, false, un elemneto vacio o nada (none)
+# la funcion booleana nos devuelve false si le pasamos 0, false, un elemento vacio o nada (none)
 
 lista = []
 

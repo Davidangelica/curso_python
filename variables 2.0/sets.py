@@ -17,7 +17,7 @@ print(conjunto3)
 conjunto1 = {1,2,3,4,5}
 conjunto2 = {1,2,3}
 
-# vereificando subconjuntos
+# verificando subconjuntos
 resultado = conjunto2.issubset(conjunto1)
 resultado = conjunto2 <= conjunto1
 
