@@ -69,8 +69,3 @@ def num_par (*nums):
             pares.append(i)
     return pares
     
-numeros = num_par(2)
-if len(numeros) > 1:
-    print(f'los numeros {numeros} son pares')  
-else:
-    print(f'el numero {numeros} es par')

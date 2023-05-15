@@ -2,6 +2,7 @@ import modulo_de_funciones as funs # el as es para asignarle un nombre al modulo
 from modulo_de_funciones import num_par #importamos una funcion en especifico
 from modulo_de_funciones import saludar as saludo_normal,saludo_raro  # con el from lo que hacemos es importar funciones en especifico
 import sys
+import mas_funciones.funciones as masfuns#de esta forma inportamos un modulo que esta en otra carpeta pero en la misma ruta
 
 
 # las funciones importadas se transforman en metodos 
@@ -32,6 +33,6 @@ import Misfunciones # luego llamamos al archivo que queremos usar que esta en el
 """de esta forma llamamos a la funcion, es importante que en el archivo que llamemos solo haya funciones, si hay funciones
 asignadas en variables e impresas en pantalla estas se van a visualizar cuando llamemos a la funcion"""
 print(Misfunciones.num_primos(10)) 
-import funciones.crear_funciones 
-frase = funciones.crear_funciones.contraseñas_random(3)
-print(frase)                                    
+
+contraseña = masfuns.contraseñas_random(3)
+print(contraseña)                                    

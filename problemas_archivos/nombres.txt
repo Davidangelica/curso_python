@@ -1,0 +1,5 @@
+los datos son: 
+nombre:David---------apellido:Angelica
+nombre:Federico---------apellido:Orazi
+nombre:Alejandro---------apellido:Radetic
+nombre:Flor---------apellido:Gonzales
